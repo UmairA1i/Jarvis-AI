@@ -5,25 +5,25 @@ A beautiful, fast, and fully functional voice + text desktop assistant built in 
 
 ## Features
 
-Hotword detection — say “Jarvis” anywhere → wakes up instantly
-Real-time voice recognition with animated mic bars
-Super-fast AI chat powered by Groq Llama-3.1-8B-Instant
-Smart built-in commands
-→ open youtube · play perfect by ed sheeran · search python tutorial
-→ what time is it · what’s the date · calculate 47 × 89
-Custom commands (GUI button) — “launch spotify”, “launch obsidian”, any app or URL
-Live CPU & RAM usage display
-Sleek dark-mode interface (CustomTkinter)
-Auto-start on Windows boot (optional, silent)
-100% open source & offline-capable (except AI)
+#### Hotword detection — say “Jarvis” anywhere → wakes up instantly
+#### Real-time voice recognition with animated mic bars
+#### Super-fast AI chat powered by Groq Llama-3.1-8B-Instant
+### Smart built-in commands
+#### → open youtube · play perfect by ed sheeran · search python tutorial
+#### → what time is it · what’s the date · calculate 47 × 89
+#### Custom commands (GUI button) — “launch spotify”, “launch obsidian”, any app or URL
+#### Live CPU & RAM usage display
+#### Sleek dark-mode interface (CustomTkinter)
+#### Auto-start on Windows boot (optional, silent)
+#### 100% open source & offline-capable (except AI)
 
 ## Tech Stack
 
-Python 3.9+
-CustomTkinter – modern GUI
-SpeechRecognition + PyAudio
-Groq API (free tier works great)
-psutil – system monitoring
+#### Python 3.9+
+#### CustomTkinter – modern GUI
+#### SpeechRecognition + PyAudio
+#### Groq API (free tier works great)
+#### psutil – system monitoring
 
 ## Installation
 Bashgit clone https://github.com/UmairA1i/jarvis-ai.git
