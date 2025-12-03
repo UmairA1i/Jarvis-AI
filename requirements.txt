@@ -1,0 +1,6 @@
+customtkinter
+speechrecognition
+pyaudio
+requests
+psutil
+groq
