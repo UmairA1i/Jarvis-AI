@@ -1,60 +1,58 @@
-Jarvis AI – Your Personal Voice Assistant (Iron Man Style)
+# Jarvis AI – Your Personal Iron-Man-Style Voice Assistant
+## Jarvis AI running
+“Just say Jarvis and take control of your computer.”
+A beautiful, fast, and fully functional voice + text desktop assistant built in pure Python.
 
-License: MIT
+## Features
 
-Python
-
-Groq
-
-A beautiful, fast, and fully functional desktop assistant built in pure Python. Just say “Jarvis” and take control of your PC with natural voice or text commands.
-Jarvis AI in action
-
-Features
-
-Hotword activation — say “Jarvis” anywhere, it wakes up instantly
-Real-time voice recognition with cool animated mic bars
-Groq + Llama-3.1-8B instant AI chat (super fast & free tier friendly)
-Smart built-in commands:
-→ open youtube · play perfect by ed sheeran · search for python tutorials
-→ what’s the time · date · calculate 48 × 27
-Custom commands — teach it to launch any app or website
-→ launch spotify · launch obsidian · launch my project
-Live CPU & RAM monitor in the UI
+Hotword detection — say “Jarvis” anywhere → wakes up instantly
+Real-time voice recognition with animated mic bars
+Super-fast AI chat powered by Groq Llama-3.1-8B-Instant
+Smart built-in commands
+→ open youtube · play perfect by ed sheeran · search python tutorial
+→ what time is it · what’s the date · calculate 47 × 89
+Custom commands (GUI button) — “launch spotify”, “launch obsidian”, any app or URL
+Live CPU & RAM usage display
 Sleek dark-mode interface (CustomTkinter)
-Optional auto-start on Windows boot
-100% open source & easy to extend
+Auto-start on Windows boot (optional, silent)
+100% open source & offline-capable (except AI)
 
-Tech Stack
+## Tech Stack
 
 Python 3.9+
 CustomTkinter – modern GUI
 SpeechRecognition + PyAudio
-Groq API (Llama-3.1-8B-Instant)
+Groq API (free tier works great)
 psutil – system monitoring
 
-Quick Start
+## Installation
 Bashgit clone https://github.com/UmairA1i/jarvis-ai.git
+
 cd jarvis-ai
+
 pip install -r requirements.txt
 
-# Set your Groq API key (get free at https://console.groq.com)
+## Get your free Groq API key → https://console.groq.com/keys
 setx GROQ_API_KEY "gsk_your_key_here"        # Windows
+
 export GROQ_API_KEY="gsk_..."             # macOS / Linux
 
-python jarvis.py
-Say “Jarvis” or click the mic button → become Tony Stark for a minute.
-Screenshots
-Chat view
-Custom commands
-Roadmap
 
-Offline mode with Ollama / Whisper.cpp
-Multi-language voice support
-Desktop notifications & reminders
-Smart home / IoT integration
 
-Made with passion by Umair © 2025
-Inspired by Tony Stark, built for everyday superheroes.
-Star this repo if you ever wanted your own JARVIS
-Contributions, ideas, and bug reports are very welcome!
-License: MIT – feel free to fork, modify, and show the world your version.
+### python jarvis.py
+
+Now just say “Jarvis” or click the mic button.
+
+
+
+Made with passion by Umair © 2025.
+
+Inspired by Tony Stark, built for everyone who ever wanted their own JARVIS.
+
+Star this repo if it made you feel like a superhero
+
+Pull requests, ideas, and forks are very welcome!
+
+License: MIT
+
+Made with ❤️ and a lot of coffee.
