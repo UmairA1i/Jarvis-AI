@@ -22,13 +22,9 @@ Optional auto-start on Windows boot
 Tech Stack
 
 Python 3.9+
-
 CustomTkinter – modern GUI
-
 SpeechRecognition + PyAudio
-
 Groq API (Llama-3.1-8B-Instant)
-
 psutil – system monitoring
 
 Quick Start
