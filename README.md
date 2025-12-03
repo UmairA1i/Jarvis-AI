@@ -1,9 +1,14 @@
 Jarvis AI – Your Personal Voice Assistant (Iron Man Style)
+
 License: MIT
+
 Python
+
 Groq
+
 A beautiful, fast, and fully functional desktop assistant built in pure Python. Just say “Jarvis” and take control of your PC with natural voice or text commands.
 Jarvis AI in action
+
 Features
 
 Hotword activation — say “Jarvis” anywhere, it wakes up instantly
