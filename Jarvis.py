@@ -1,5 +1,5 @@
 # ======================================================
-# 📦 IMPORTS, HELPERS & FEATURES
+#  IMPORTS, HELPERS & FEATURES
 # ======================================================
 import os
 import datetime
@@ -25,7 +25,7 @@ def animate_bars():
 
 
 # ======================================================
-# 🎤 VOICE INPUT 
+#  VOICE INPUT 
 # ======================================================
 def listen():
     global listening_flag
@@ -59,7 +59,7 @@ def listen():
 
 
 # ======================================================
-# 🧠 AI (GROQ) 
+#  AI (GROQ) 
 # ======================================================
 chat_history = [{"role": "system", "content": "You are Jarvis, a helpful AI assistant."}]
 
@@ -92,7 +92,7 @@ def get_ai_response(prompt):
 
 
 # ======================================================
-# 💬 CHAT MESSAGE HELPERS 
+#  CHAT MESSAGE HELPERS 
 # ======================================================
 def insert_user_message(text):
     chat_log.insert("end", f"🧑 Umair:\n", "user_name")
@@ -107,7 +107,7 @@ def insert_bot_message(text):
 
 
 # ======================================================
-# 🌐 WEBSITE OPENER ("open ___")
+#  WEBSITE OPENER ("open ___")
 # Only opens websites / searches. NEVER launches apps.
 # ======================================================
 def smart_open_website(query):
@@ -160,7 +160,7 @@ def smart_open_website(query):
 
 
 # ======================================================
-# 🔍 SMART SEARCH ("search ..." or "search for ...")
+#  SMART SEARCH ("search ..." or "search for ...")
 # ======================================================
 def smart_search(query):
     search_text = (
@@ -178,7 +178,7 @@ def smart_search(query):
 
 
 # ======================================================
-# ▶️ YOUTUBE VIDEO OPENER ("play ...")
+#  YOUTUBE VIDEO OPENER ("play ...")
 # Opens YouTube search results page for the query.
 # ======================================================
 def play_youtube_video(query):
@@ -192,7 +192,7 @@ def play_youtube_video(query):
 
 
 # ======================================================
-# ⭐ CUSTOM COMMANDS FEATURE (load/save/add)
+#  CUSTOM COMMANDS FEATURE (load/save/add)
 # custom_commands maps trigger_phrase -> action (URL or app path)
 # ======================================================
 CUSTOM_COMMANDS_FILE = "custom_commands.json"
@@ -253,7 +253,7 @@ def open_custom_command_window():
 
 
 # ======================================================
-# 🧭 OPTIMIZED COMMAND ROUTER 
+#  OPTIMIZED COMMAND ROUTER 
 # ======================================================
 def execute_command(query):
     query = query.strip()
@@ -288,25 +288,25 @@ def execute_command(query):
                 insert_bot_message("I couldn't find that launch command.")
             return
 
-    # 2️⃣ Smart Search: "search ..." or "search for ..."
+    # Smart Search: "search ..." or "search for ..."
     if query.startswith("search") or query.startswith("search for"):
         response = smart_search(query)
         insert_bot_message(response)
         return
 
-    # 3️⃣ Play YouTube videos: "play ..."
+    #  Play YouTube videos: "play ..."
     if query.startswith("play "):
         response = play_youtube_video(query)
         insert_bot_message(response)
         return
 
-    # 4️⃣ Website Opener: "open ..."
+    # Website Opener: "open ..."
     if query.startswith("open "):
         response = smart_open_website(query)
         insert_bot_message(response)
         return
 
-    # 5️⃣ Built-in quick commands (time, date, calculate, exit)
+    #  Built-in quick commands (time, date, calculate, exit)
     if "time" == query or query.startswith("time "):
         insert_bot_message(f"The time is {datetime.datetime.now().strftime('%I:%M %p')}")
         return
@@ -332,12 +332,12 @@ def execute_command(query):
             pass
         return
 
-    # 6️⃣ Fallback to AI
+    #  Fallback to AI
     get_ai_response(query)
 
 
 # ======================================================
-# 🚀 USER INTERFACE (UI)
+#  USER INTERFACE (UI)
 # ======================================================
 ctk.set_appearance_mode("dark")
 ctk.set_default_color_theme("blue")
@@ -426,7 +426,7 @@ status_label.pack(pady=10)
 
 
 # ======================================================
-# ⭐ FEATURE 1: OPEN ON STARTUP
+#  OPEN ON STARTUP
 # ======================================================
 def enable_startup():
     try:
@@ -450,7 +450,7 @@ threading.Thread(target=enable_startup, daemon=True).start()
 
 
 # ======================================================
-# ⭐ HOTWORD DETECTION (“jarvis”) — background non-blocking
+#  HOTWORD DETECTION (“jarvis”) — background non-blocking
 # ======================================================
 _bg_stop_listening = None
 
